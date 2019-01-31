@@ -1,0 +1,6 @@
+<%= form_tag(compare_path, method: :get) do %>
+    <%= text_field_tag :url1 %>
+    <%= text_field_tag :url2 %>
+    <%= submit_tag 'Comparar' %>
+<% end %>    
+<%= @response %>

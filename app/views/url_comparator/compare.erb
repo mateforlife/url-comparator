@@ -1,6 +1,7 @@
+<h3>Comparador de URLs</h3>
 <%= form_tag(compare_path, method: :get) do %>
-    <%= text_field_tag :url1 %>
-    <%= text_field_tag :url2 %>
+    <%= text_field_tag :url1, nil, placeholder: 'inserte la primera URL' %>
+    <%= text_field_tag :url2, nil, placeholder: 'inserte la segunda URL' %>
     <%= submit_tag 'Comparar' %>
 <% end %>    
 <%= @response %>
